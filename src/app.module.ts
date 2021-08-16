@@ -5,10 +5,7 @@ import { NotificationModule } from './notification/notification.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [
-    NotificationModule,
-    MongooseModule.forRoot('mongodb://localhost/nest'),
-  ],
+  imports: [NotificationModule, MongooseModule.forRoot('mongodb://mongo/nest')],
   controllers: [AppController],
   providers: [AppService],
 })
