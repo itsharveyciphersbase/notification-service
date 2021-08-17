@@ -84,12 +84,14 @@ Nest is [MIT licensed](LICENSE).
 
 Just dont forget to create a .env file and put these environment variables inside : 
 
-RABBITMQ_USER=guest
+`RABBITMQ_USER=guest`
 
-RABBITMQ_PASSWORD=guest
+`RABBITMQ_PASSWORD=guest`
 
-RABBITMQ_HOST=rabbitmq:5672
+`RABBITMQ_HOST=rabbitmq:5672`
 
-RABBITMQ_QUEUE_NAME=notifications-subscribers
+`RABBITMQ_QUEUE_NAME=notifications-subscribers`
 
-4. Navigate to localhost:3000/api and you will be able to use the swagger to post a new notification
+4. Navigate to `localhost:3000/api` and you will be able to use the swagger to post a new notification
+
+I think the next steps would be to work on unit testing more
