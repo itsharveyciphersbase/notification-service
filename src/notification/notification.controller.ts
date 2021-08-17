@@ -65,7 +65,7 @@ export class NotificationController {
   ) {
     console.log('#############################');
     console.log(data);
-    // console.log(`Pattern: ${context.getPattern()}`);
-    // console.log(context.getMessage());
+    console.log(`Pattern: ${context.getPattern()}`);
+    console.log(context.getMessage());
   }
 }

@@ -71,3 +71,22 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+<img src="https://wanago.io/wp-content/uploads/2020/11/rabbit.jpg">
+
+# How to Build and Run:
+1. Build the docker images of all services with `make build`.
+
+2. Run all serices with `make run` or `docker-compose up`.
+
+3. Run `make clean` to delete all images.
+
+Just dont forget to create a .env file and put these environment variables inside : 
+
+RABBITMQ_USER=guest
+RABBITMQ_PASSWORD=guest
+RABBITMQ_HOST=rabbitmq:5672
+RABBITMQ_QUEUE_NAME=notifications-subscribers
+
+4. Navigate to localhost:3000/api and you will be able to use the swagger to post a new notification
